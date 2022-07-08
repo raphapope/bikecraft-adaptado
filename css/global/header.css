@@ -1,0 +1,54 @@
+.header-bg {
+  background-color: #cccccc;
+}
+.header {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px 20px;
+  justify-content: space-between;
+  align-items: center;
+  box-sizing: border-box;
+  padding: 20px;
+  max-width: 1200px;
+  margin-left: auto;
+  margin-right: auto;
+}
+.header-menu {
+  display: flex;
+  gap: 20px;
+  flex-wrap: wrap;
+}
+.header-menu a {
+  display: inline-block;
+  padding: 16px;
+  color: #595959;
+  font-size: 18px;
+  font-weight: 400;
+  font-family: "poppins";
+}
+.header-menu a:hover {
+  color: #ee4b35;
+  transition: 0.3s;
+}
+
+/* Header Reponsivo */
+
+@media (max-width: 650px) {
+  .header {
+    display: flex;
+    justify-content: center;
+  }
+  .header-menu {
+    gap: 8px;
+  }
+  .header-menu a {
+    background: #a8a8a8;
+    border-radius: 8px;
+    padding: 8px 8px;
+    font-size: 14px;
+    color: #fff;
+  }
+  .header-menu a:hover {
+    background-color: #fff;
+  }
+}
